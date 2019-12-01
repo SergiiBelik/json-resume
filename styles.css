@@ -1,0 +1,104 @@
+body {
+	margin: 1px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 0.5fr;
+	background-color: black;
+	color: white;
+}
+.header a {
+	color: white;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.info {
+	margin: 10px 0;
+}
+
+.name {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 100;
+	margin: 10px;
+	letter-spacing: 2px;
+}
+
+.photo {
+	height: 110px;
+	float: right;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.employementWrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: repeat(4 1fr);
+	margin: 0 30px auto 5px;
+}
+
+.left-column {
+	margin: 0 5px auto 30px;
+}
+
+.horizontalLine {
+	margin-right: 30px;
+}
+h3 {
+	margin-bottom: 3px;
+}
+
+.courses {
+	font-weight: bold;
+}
+
+.dates {
+	font-size: 12px;
+}
+
+.title {
+	color: blue;
+}
+
+/*for printing purposes. pdf prints best in Google Chrome*/
+@media print{
+	body {
+		font: 10pt Georgia, "Times New Roman", Times, serif;
+		line-height: 1;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.dates {
+		font-size: 8pt;
+	}
+
+	.header {
+		height: 60pt;
+	}
+
+	.photo {
+		height: 60pt;
+	}
+
+	.content {
+		height: 110pt;
+	}
+
+	/*@page: {
+		margin: 0.1cm;
+	}*/
+
+
+}
